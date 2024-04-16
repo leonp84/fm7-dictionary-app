@@ -1,17 +1,10 @@
-@font-face {
-    font-family: "Inconsolata", monospace;
-    src: url(assets/fonts/inconsolata/Inconsolata-VariableFont_wdth,wght.ttf) format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-@font-face {
-    font-family: "Inter", serif;
-    src: url(assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Lora", sans-serif;
-    src: url(assets/fonts/lora/Lora-VariableFont_wght.ttf) format("truetype");
-}
+/*
+font-family: "Inter", sans-serif;
+font-family: "Lora", serif;
+font-family: "Inconsolata", monospace;
+*/
 /*
 Red:        #FF5252;
 Purple:     #A445ED;
@@ -24,5 +17,147 @@ Purple:     #A445ED;
 }
 
 body {
-    font-family: "Lora", sans-serif;
+    font-family: "Inter", monospace;
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 600px;
+    flex-direction: column;
+}
+
+nav {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    border-right: 2px solid rgba(0, 0, 0, 0.193);
+}
+
+.dropdown img {
+    margin-left: 10px;
+    margin-right: 20px;
+    
+}
+
+.form-check {
+    padding-left: 50px;
+}
+
+.form-check-input:checked {
+    background-color: #A445ED;
+    border: none;
+}
+
+.form-check-input {
+    background-color: grey;
+    border: none;
+}
+
+.form-switch .form-check-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.input-box {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.input-box input {
+    width: 85%;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.091);
+    padding: 10px 20px;
+    font-weight: 800;
+
+}
+
+.input-box img {
+    position: absolute;
+    top: 11px;
+    right: 8%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.first-section {
+    margin-top: 20px;
+}
+
+.main-word {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.phonetic {
+    color:#A445ED;
+    font-size: 20px;
+}
+
+.second-section {
+    margin-top: 20px;
+}
+
+.horizontal-line {
+    width: 100%;
+}
+
+.p-o-s {
+    font-weight: 800;
+    font-style: italic;
+    padding-right: 15px;
+}
+
+.meaning {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.388);
+}
+
+ul > li {
+    padding: 5px 10px;
+}
+
+ul > li::marker {
+    color: #A445ED;
+}
+
+.s-and-a {
+    padding: 10px 5px
+}
+
+.semantics { 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    color: rgba(0, 0, 0, 0.388);
+}
+
+
+.semantic-words {
+    font-weight: 800;
+    color: #A445ED;
+}
+
+.source-section {
+    margin-top: 10px;
+}
+
+#source-title {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.388);
+}
+
+#source {
+    font-size: 14px;
 }

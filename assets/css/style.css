@@ -17,10 +17,26 @@ Purple:     #A445ED;
 }
 
 body {
-    font-family: "Inter", monospace;
-
+    font-family: "Inter", sans-serif;
     display: flex;
     justify-content: center;
+}
+
+.sans-serif {
+    font-family: "Inter", sans-serif;
+}
+
+.serif {
+    font-family: "Lora", serif;
+}
+
+.mono {
+    font-family: "Inconsolata", monospace;
+}
+
+.dark {
+    background-color: black;
+    color: white;
 }
 
 main {
@@ -48,8 +64,8 @@ nav {
 
 .menu {
     position: absolute;
-    top: 30px;
-    right: 14px;
+    top: 33px;
+    right: 115px;
     height: 105px;
     width: 130px;
     background-color: rgb(255, 255, 255);
@@ -59,6 +75,12 @@ nav {
     z-index: 10;
     line-height: 200%;
     cursor:auto;
+}
+
+.dark .menu {
+    color: white;
+    background-color: black;
+    border: 1px solid #757575;
 }
 
 .hidden {
@@ -117,6 +139,10 @@ nav {
 
 }
 
+.dark input {
+    background-color: #1F1F1F;
+ }
+
 .input-box img {
     position: absolute;
     top: 11px;
@@ -127,8 +153,29 @@ input:focus {
     outline: 1px solid #A445ED;
 }
 
+.empty-box {
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    top: 48px;
+    left: 28px;
+}
+
 .first-section {
     margin-top: 20px;
+}
+
+.no-word {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    padding-left:20px;
+    width: 93%;
+    margin-top: 40px;
+    height: 200px;
 }
 
 .main-word {
@@ -139,6 +186,10 @@ input:focus {
 .phonetic {
     color:#A445ED;
     font-size: 20px;
+}
+
+#play-icon {
+    cursor: pointer;
 }
 
 .second-section {
@@ -161,12 +212,21 @@ input:focus {
     color: rgba(0, 0, 0, 0.388);
 }
 
+.dark .meaning { 
+    color: #757575;
+}
+
 ul > li {
     padding: 5px 10px;
 }
 
 ul > li::marker {
     color: #A445ED;
+}
+
+.examples {
+    color:rgb(152, 152, 152);
+    line-height: 220%;
 }
 
 .s-and-a {
@@ -180,10 +240,19 @@ ul > li::marker {
     color: rgba(0, 0, 0, 0.388);
 }
 
+.dark .semantics { 
+    color: #757575;
+}
 
-.semantic-words {
+
+.semantic-words, .semantic-words:visited {
     font-weight: 800;
     color: #A445ED;
+    text-decoration: none;
+}
+
+.semantic-words:hover {
+    text-decoration: underline;
 }
 
 .source-section {
@@ -193,6 +262,10 @@ ul > li::marker {
 #source-title {
     text-decoration: underline;
     color: rgba(0, 0, 0, 0.388);
+}
+
+.dark #source-title { 
+    color: #757575;
 }
 
 #source {

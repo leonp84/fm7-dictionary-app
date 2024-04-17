@@ -37,6 +37,7 @@ nav {
 
 .dropdown {
     border-right: 2px solid rgba(0, 0, 0, 0.193);
+    cursor: pointer;
 }
 
 .dropdown img {
@@ -45,8 +46,42 @@ nav {
     
 }
 
+.menu {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    height: 105px;
+    width: 130px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.165);
+    padding: 10px 20px;
+    z-index: 10;
+    line-height: 200%;
+    cursor:auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#sans-serif {
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+#serif {
+    font-family: "Lora", serif;
+    cursor: pointer;
+}
+#mono {
+    font-family: "Inconsolata", monospace;
+    cursor: pointer;
+}
+
 .form-check {
     padding-left: 50px;
+
 }
 
 .form-check-input:checked {
@@ -57,6 +92,7 @@ nav {
 .form-check-input {
     background-color: grey;
     border: none;
+    cursor: pointer;
 }
 
 .form-switch .form-check-input {
@@ -73,10 +109,11 @@ nav {
 .input-box input {
     width: 85%;
     border-radius: 15px;
-    border: none;
+    border: 1px solid transparent;
     background-color: rgba(0, 0, 0, 0.091);
     padding: 10px 20px;
     font-weight: 800;
+    cursor: pointer;
 
 }
 
@@ -87,7 +124,7 @@ nav {
 }
 
 input:focus {
-    outline: none;
+    outline: 1px solid #A445ED;
 }
 
 .first-section {

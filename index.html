@@ -15,6 +15,7 @@
 
 <body>
   <main class="d-flex justify-content-center">
+    <h1 class="hidden">Dictionary Web App</h1>
 
     <nav class="d-flex justify-content-between">
       <a href="#"><img src="assets/images/logo.svg" alt="Logo" height="35" id="logo"></a>
@@ -26,9 +27,9 @@
           </div>
           <!-- Modal Menu-->
           <div class="menu hidden">
-            <span id="sans-serif">Sans Serif</span><br>
-            <span id="serif">Serif</span><br>
-            <span id="mono">Mono</span>
+            <span class="menu-items" id="sans-serif">Sans Serif</span><br>
+            <span class="menu-items" id="serif">Serif</span><br>
+            <span class="menu-items" id="mono">Mono</span>
           </div>
 
           <div class="form-check form-switch">
@@ -36,6 +37,7 @@
           </div>
           <img src="assets/images/icon-moon.svg" alt="Moon" height="20" id="theme-icon">
         </div>
+      </div>
     </nav>
     <div class="user-input d-flex justify-content-center">
       <div class="input-box">
@@ -45,70 +47,51 @@
       </div>
     </div>
 
-    <!-- Incorrect Word User Display -->
-    <div class="no-word" style="display: none;">
-      <img src="assets/images/frowny-face.png" alt="Frowny Face" height="60">
-      <br><br>
-      <h5 class="fw-bold">No Definitions Found</h5><br>
-      <p>Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again at
-        later time or head to the web instead.</p>
-    </div>
-
-    <div class="first-section d-flex justify-content-between align-items-center">
-      <div class="top-section">
-        <span class="main-word">keyboard</span><br>
-        <span class="phonetic">/keyboard/</span>
+    <section>
+      <h2 class="hidden">Dictionary Web App - Word Information</h2>
+      <div class="first-section d-flex justify-content-between align-items-center">
+        <div class="top-section">
+          <span class="main-word">keyboard</span><br>
+          <span class="phonetic">/ˈkibɔɹd/</span>
+        </div>
+        <img src="assets/images/icon-play.svg" alt="Play Icon" height="55" id="play-icon">
       </div>
-      <img src="assets/images/icon-play.svg" alt="Play Icon" height="55" id="play-icon">
-    </div>
-    <div class="second-section d-flex justify-content-between align-items-center">
-      <!-- Parts of Speech + Horizontal Line -->
-      <span class="p-o-s">adjective</span>
-      <div class="horizontal-line">
-        <hr>
+      <div class="second-section d-flex justify-content-between align-items-center">
+        <span class="p-o-s">noun</span>
+        <div class="horizontal-line">
+          <hr>
+        </div>
       </div>
-    </div>
-    <span class="meaning">Meaning</span>
-
-    <!-- Meanings -->
-    <ul>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim repellat rem ut pariatur minus</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quod beatae odit, maiores distinctio
-        Minus.<br>
-
-        <!-- Examples -->
-        <span class="examples">"Keyboarding can be quite tiring.</span>
-      </li>
-    </ul>
-
-    <!-- Synonyms and Antonyms -->
-    <div class="s-and-a d-flex justify-content-between align-items-between">
-      <span class="semantics">Synonyms</span>
-      <span>
-        <a href="#" class="semantic-words">electronic keyboard</a><br>
-        <a href="#" class="semantic-words">electronic keyboard 2</a><br>
-        <a href="#" class="semantic-words">electronic keyboard twenty</a><br>
-      </span>
-    </div>
-
-    <div class="s-and-a d-flex justify-content-between align-items-between">
-      <span class="semantics">Antonyms</span>
-      <span>
-        <a href="#" class="semantic-words">electronic nokeyboard</a><br>
-        <a href="#" class="semantic-words">electronic noboard 2</a><br>
-        <a href="#" class="semantic-words">electronic nothing</a><br>
-      </span>
-    </div>
-
-    <!-- Horizontal Line -->
-    <hr>
-
-    <!-- Source -->
-    <div class="source-section">
-      <span id="source-title">Source</span><br>
-      <span id="source">https://www.wikipedia.org/wiki/keyboard</span>&nbsp;<img src="assets/images/icon-new-window.svg"
-        alt="New Window" height="15">
-    </div>
+      <span class="meaning">Meaning</span>
+      <ul>
+        <li>(etc.) A set of keys used to operate a typewriter, computer etc.</li>
+        <li>A component of many instruments including the piano, organ, and harpsichord consisting of usually black and
+          white keys that cause different tones to be produced when struck.</li>
+        <li>A device with keys of a musical keyboard, used to control electronic sound-producing devices which may be
+          built into or separate from the keyboard device.</li>
+      </ul>
+      <div class="s-and-a d-flex justify-content-start align-items-center">
+        <span class="semantics">Synonyms</span><span><a href="#" class="semantic-words">electronic
+            keyboard</a>&nbsp;&nbsp;</span></div>
+      <div class="second-section d-flex justify-content-between align-items-center">
+        <span class="p-o-s">verb</span>
+        <div class="horizontal-line">
+          <hr>
+        </div>
+      </div>
+      <span class="meaning">Meaning</span>
+      <ul>
+        <li>To type on a computer keyboard.</li>
+        <li class="examples">"And God said, Let the waters under the heaven be gathered together unto one place, and let the dry land appear: and it was so."</li>
+      </ul>
+      <hr>
+      <div class="source-section">
+        <span id="source-title">Source</span><br>
+        <span id="source">https://en.wiktionary.org/wiki/keyboard</span>&nbsp;<a
+          href="https://en.wiktionary.org/wiki/keyboard" target="_blank"><img src="assets/images/icon-new-window.svg"
+            alt="New Window" height="15" id="follow-link"></a>
+      </div>
+    </section>
 
   </main>
 

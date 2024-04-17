@@ -40,15 +40,20 @@ body {
 }
 
 main {
+    min-width: 355px;
     padding: 20px;
     margin-top: 20px;
-    max-width: 750px;
+    max-width: 929px;
     flex-direction: column;
 }
 
 nav {
     font-weight: 800;
     margin-bottom: 24px;
+}
+
+h1 {
+    line-height: 100%;
 }
 
 .dropdown {
@@ -89,6 +94,9 @@ nav {
     box-shadow: 1px 1px 15px 2px #A445ED;
 }
 
+.purple {
+    color: #A445ED;
+}
 .hidden {
     display: none;
 }
@@ -166,8 +174,8 @@ input:focus {
     color: red;
     font-size: 14px;
     position: absolute;
-    top: 48px;
-    left: 28px;
+    top: 50px;
+    left: 5px;
 }
 
 .first-section {
@@ -203,6 +211,7 @@ input:focus {
 
 .second-section {
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .horizontal-line {
@@ -226,7 +235,7 @@ input:focus {
 }
 
 ul > li {
-    padding: 5px 10px;
+    padding-top: 20px;
 }
 
 ul > li::marker {
@@ -235,7 +244,9 @@ ul > li::marker {
 
 .examples {
     color:rgb(152, 152, 152);
-    line-height: 220%;
+    line-height: 145%;
+    list-style-type: none;
+    padding-top: 5px;
 }
 
 .s-and-a {
@@ -283,6 +294,10 @@ ul > li::marker {
 
 @media screen and (min-width: 768px) {
 
+    section {
+        width: 688px;
+    }
+
     body {
         font-size: larger;
         line-height: 150%;
@@ -319,9 +334,24 @@ ul > li::marker {
         font-size: 54px;
 
     }
+
+    .phonetic {
+        line-height: 200%;
+        font-size: larger;
+    }
+
+    .empty-box {
+        font-size: 17px;
+        top: 57px;
+        left: 5px;
+    }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
+
+    section {
+        width: 929px;
+    }
 
     .first-section {
         margin-top: 40px;

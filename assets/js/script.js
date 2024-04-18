@@ -46,6 +46,7 @@ $(document).ready(function () {
         event.preventDefault();
         fetchData(this.text);
         clearFocus();
+        window.scrollTo(0, 0);
     });
 
     $('#play-icon').on('click', function() {
@@ -60,7 +61,7 @@ $(document).ready(function () {
         }
     });
 
-    
+    $('#search-icon').on('click', lookup);
 
 });
 
@@ -184,6 +185,7 @@ function displayData(data) {
         event.preventDefault();
         fetchData(this.text);
         clearFocus();
+        window.scrollTo(0, 0);
     });
 }
 

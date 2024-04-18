@@ -178,6 +178,10 @@ input:focus {
     left: 5px;
 }
 
+#search-icon {
+    cursor: pointer;
+}
+
 .first-section {
     margin-top: 20px;
 }

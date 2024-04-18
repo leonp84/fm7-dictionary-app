@@ -28,9 +28,9 @@ $(document).ready(function () {
     });
 
     $('#play-icon').hover(function () {
-        $(this).attr("src", "../assets/images/icon-play-hover.png");
+        $(this).attr("src", "assets/images/icon-play-hover.png");
     }, function () {
-        $(this).attr("src", "../assets/images/icon-play.svg");
+        $(this).attr("src", "assets/images/icon-play.svg");
     });
 
     $('#toggle-theme').on('click', function () {

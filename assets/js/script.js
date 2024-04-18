@@ -196,7 +196,6 @@ function displayError() {
 
 function clearFocus() {
     document.getElementsByClassName('userInput')[0].value = "";
-    document.getElementsByClassName('userInput')[0].focus();
 }
 
 

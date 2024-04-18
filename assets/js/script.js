@@ -48,12 +48,19 @@ $(document).ready(function () {
         clearFocus();
     });
 
+    $('#play-icon').on('click', function() {
+        let a = new Audio("https://api.dictionaryapi.dev/media/pronunciations/en/keyboard-us.mp3");
+        a.play();
+    });
+
     document.getElementsByClassName('userInput')[0].addEventListener('keydown',
     function (event) {
         if (event.key === 'Enter') {
             lookup();
         }
     });
+
+    
 
 });
 
@@ -163,9 +170,9 @@ function displayData(data) {
     $('section').html(newHTML);
 
     $('#play-icon').hover(function () {
-        $(this).attr("src", "../assets/images/icon-play-hover.png");
+        $(this).attr("src", "assets/images/icon-play-hover.png");
     }, function () {
-        $(this).attr("src", "../assets/images/icon-play.svg");
+        $(this).attr("src", "assets/images/icon-play.svg");
     });
 
     $('#play-icon').on('click', function() {
